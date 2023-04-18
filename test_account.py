@@ -11,9 +11,9 @@ def test_account_init():
 def test_account_deposit():
     account = Account("Jim")
     assert account.deposit(50) is True
-    assert account.get_balance() == 100
+    assert account.get_balance() == 50
     assert account.deposit(-10) is False
-    assert account.get_balance() == 100
+    assert account.get_balance() == 50
 
 
 def test_account_withdraw():
