@@ -9,7 +9,7 @@ def test_account_init():
 
 
 def test_account_deposit():
-    account = Account("John")
+    account = Account("Jim")
     assert account.deposit(100) is True
     assert account.get_balance() == 100
     assert account.deposit(-50) is False
